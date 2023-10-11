@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Rei das Borda</title>
+
+        <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Red+Hat+Display:wght@300;700&family=Young+Serif&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header id="cabeca">
+            <div id="back"><img src="img/logo.png" alt="logo" width="200px" height="200px"></div>
+            <h1>PIZZARIA REI DAS BORDAS</h1>
+            <h2 class="descr">Pizzaria especializada e bordas</h2>
+            <button onclick="openAba('hora')" id="hora">ABERTO <i class="fa-solid fa-bars"></i></button>
+            <div id="detal">
+                <div class="entreg" onclick="openAba('entreg')">
+                    <i class="fa-solid fa-money-bill-wheat"></i>
+                    <h2>Taxa de entrega</h2>
+                    <h3 id="entregaCalc">Calcular</h3>
+                </div>
+                <div class="espe" onclick="openAba('espe')">
+                    <i class="fa-solid fa-clock"></i>
+                    <h2>Tempo de espera</h2>
+                    <h3 id="esperaCalc">Calcular</h3>
+                </div>
+                <div class="tel" onclick="openAba('tel')">
+                    <i class="fa-solid fa-phone"></i>
+                    <h2>Telefone</h2>
+                    <h3>(12) 34567-8901</h3>
+                </div>
+            </div>
+            <section class="pes">
+                <ul>
+                    <li><a href="#pizza">Pizza</a></li>
+                    <li><a href="#hambur">Hambúrgueres</a></li>
+                    <li><a href="#batata">Batata-Frita</a></li>
+                    <li><a href="#bebida">Bebidas</a></li>
+                </ul>
+                <label for="pesqu">Buscar produtos por nome ou descrição:</label>
+                <div id="pesquisa">
+                    <input type="text" name="pesqu" id="pesqu" placeholder="Digite aqui:">
+                    <button type="submit"><img src="img/lupa.png" alt="Pesquisar" width="50px"></button>
+                </div>
+            </section>
+        </header>
+    </body>
+    <script src="https://kit.fontawesome.com/f5ef098d2f.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</html>
