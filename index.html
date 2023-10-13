@@ -8,6 +8,7 @@
 
         <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styleAbas.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +19,7 @@
             <div id="back"><img src="img/logo.png" alt="logo" width="200px" height="200px"></div>
             <h1>PIZZARIA REI DAS BORDAS</h1>
             <h2 class="descr">Pizzaria especializada e bordas</h2>
-            <button onclick="openAba('hora')" id="hora">ABERTO <i class="fa-solid fa-bars"></i></button>
+            <button onclick="openAba('horario')" id="hora">ABERTO <i class="fa-solid fa-bars"></i></button>
             <div id="detal">
                 <div class="entreg" onclick="openAba('entreg')">
                     <i class="fa-solid fa-money-bill-wheat"></i>
@@ -40,8 +41,10 @@
                 <ul>
                     <li><a href="#pizza">Pizza</a></li>
                     <li><a href="#hambur">Hambúrgueres</a></li>
+                    <li><a href="#dog">Cachorro-Quente</a></li>
                     <li><a href="#batata">Batata-Frita</a></li>
                     <li><a href="#bebida">Bebidas</a></li>
+                    <li><a href="#kombo">Combos</a></li>
                 </ul>
                 <label for="pesqu">Buscar produtos por nome ou descrição:</label>
                 <div id="pesquisa">
@@ -81,48 +84,56 @@
                         <div>
                             <h2>X-Salada</h2>
                             <h3>Pão, hambúrguer, mussarela, alface, tomate.</h3>
+                            <span>R$ 6.00</span>
                         </div>
                     </li>
                     <li onclick="openAba('egg')">
                         <div>
                             <h2>X-Egg</h2>
                             <h3>Pão, hambúrguer, mussarela, ovo, alface, tomate.</h3>
+                            <span>R$ 8.00</span>
                         </div>
                     </li>
                     <li onclick="openAba('bacon')">
                         <div>
                             <h2>X-Bacon</h2>
                             <h3>Pão, mussarela, bacon, presunto, cheggar, alface e tomate.</h3>
+                            <span>R$ 10.00</span>
                         </div>
                     </li>
                     <li onclick="openAba('calabresa')">
                         <div>
                             <h2>X-Calabresa</h2>
                             <h3>Pão, hambúrger, mussarela, presunto, calabresa, ovo, chedar, alface e tomate.</h3>
+                            <span>R$ 10.00</span>
                         </div>
                     </li>
                     <li onclick="openAba('tudo')">
                         <div>
                             <h2>X-Tudo</h2>
                             <h3>Pão, hambúrguer, mussarela, presunto, ovo, bacon, salsicha, cheddar, alface e tomate.</h3>
+                            <span>R$ 15.00</span>
                         </div>
                     </li>
                     <li onclick="openAba('frango')">
                         <div>
                             <h2>X-Frango Desfiado</h2>
                             <h3>Pão, frango desfiado, mussarela, bacon, cheddar, alface e tomate.</h3>
+                            <span>R$ 14.00</span>
                         </div>
                     </li>
                     <li onclick="openAba('ameri')">
                         <div>
                             <h2>X-Americano</h2>
                             <h3>Pão, hambúrguer, mussarela, presnto, bacon, calabresa, ovo, alfaçe, tomate.</h3>
+                            <span>R$ 10.00</span>
                         </div>
                     </li>
                     <li onclick="openAba('casa')">
                         <div>
                             <h2>X-Moda da Casa</h2>
                             <h3>Pão, 2 hambúrgueres, 2 ovos, 2 salsichas, mussarela, presunto, calabresa, bacon, alface e tomate.</h3>
+                            <span>R$ 19.00</span>
                         </div>
                     </li>
                 </ul>
@@ -133,13 +144,15 @@
                     <li onclick="openAba('dog')">
                         <div>
                             <h2>Dog na Chapa</h2>
-                            <h3>1 sabor</h3>
+                            <h3>Pão, salsicha, bacon, calabresa, mussarela, presunto, milho, ervilha, batata palha</h3>
+                            <span>R$ 9.00</span>
                         </div>
                     </li>
                     <li onclick="openAba('dogModa')">
                         <div>
                             <h2>Dog Moda da Casa</h2>
-                            <h3>2 sabores</h3>
+                            <h3>Pão, 2 salsicha, bacon, calabresa, mussarela, presunto, cheddar, milho, ervilha, batata palha</h3>
+                            <span>R$ 12.00</span>
                         </div>
                     </li>
                 </ul>
@@ -147,22 +160,25 @@
             <section id="batata">
                 <h2 class="titulo">Batata-Frita</h2>
                 <ul>
-                    <li onclick="openAba('1 sabor')">
+                    <li onclick="openAba('bataP')">
                         <div>
-                            <h2>Padrão</h2>
-                            <h3>1 sabor</h3>
+                            <h2>Batata-Frita Pequena</h2>
+                            <h3>Batata, mussarela, cheddar e bacon</h3>
+                            <span>R$ 10.00</span>
                         </div>
                     </li>
-                    <li onclick="openAba('2 sabores')">
+                    <li onclick="openAba('bataM')">
                         <div>
-                            <h2>Padrão</h2>
-                            <h3>2 sabores</h3>
+                            <h2>Batata-Frita Média</h2>
+                            <h3>Batata, mussarela, cheddar e bacon</h3>
+                            <span>R$ 15.00</span>
                         </div>
                     </li>
-                    <li onclick="openAba('4 sabores')">
+                    <li onclick="openAba('bataG')">
                         <div>
-                            <h2>Padrão</h2>
-                            <h3>4 sabores</h3>
+                            <h2>Batata-Frita Grande</h2>
+                            <h3>Batata, mussarela, cheddar e bacon</h3>
+                            <span>R$ 25.00</span>
                         </div>
                     </li>
                 </ul>
@@ -170,27 +186,137 @@
             <section id="bebida">
                 <h2 class="titulo">Bebidas</h2>
                 <ul>
-                    <li onclick="openAba('1 sabor')">
+                    <li onclick="openAba('coca')">
                         <div>
-                            <h2>Padrão</h2>
-                            <h3>1 sabor</h3>
+                            <h2>Coca-Cola 1,5L</h2>
+                            <span>R$ 10.00</span>
                         </div>
                     </li>
-                    <li onclick="openAba('2 sabores')">
+                    <li onclick="openAba('kuat')">
                         <div>
-                            <h2>Padrão</h2>
-                            <h3>2 sabores</h3>
+                            <h2>Kuat 1,5L</h2>
+                            <span>R$ 7.00</span>
                         </div>
                     </li>
-                    <li onclick="openAba('4 sabores')">
+                    <li onclick="openAba('fanta')">
                         <div>
-                            <h2>Padrão</h2>
-                            <h3>4 sabores</h3>
+                            <h2>Fanta 1,5L</h2>
+                            <span>R$ 8.00</span>
+                        </div>
+                    </li>
+                    <li onclick="openAba('cocalata')">
+                        <div>
+                            <h2>Coca-Cola 150ml</h2>
+                            <span>R$ 5.00</span>
+                        </div>
+                    </li>
+                    <li onclick="openAba('pepsilata')">
+                        <div>
+                            <h2>Pepsi 150ml</h2>
+                            <span>R$ 5.00</span>
+                        </div>
+                    </li>
+                    <li onclick="openAba('guaranalata')">
+                        <div>
+                            <h2>Guaraná 150ml</h2>
+                            <span>R$ 5.00</span>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section id="kombo">
+                <h2 class="titulo">Combos</h2>
+                <ul>
+                    <li onclick="openAba('tridog')" class="do">
+                        <div>
+                            <h2>Trio Dog na Chapa</h2>
+                            <h3>1 Dog na Chapa: Pão, salsicha, bacon, mussarela, presunto, calabresa, milho, ervilha, batata palha + batata frita + refrigerante</h3>
+                            <span>R$ 20.00</span>
+                        </div>
+                    </li>
+                    <li onclick="openAba('trixtu')" class="ham">
+                        <div>
+                            <h2>Trio X-Tudo</h2>
+                            <h3>1 X-Tudo: Pão hambúrguer, mussarela, presunto, calabresa, ovo, bacon, cheddar, salsicha, alface e tomate + batata frita + refrigerante
+                            </h3>
+                            <span>R$ 20.00</span>
+                        </div>
+                    </li>
+                    <li onclick="openAba('dotri')" class="ham">
+                        <div>
+                            <h2>2 Trio X-Tudo</h2>
+                            <h3>2 X-Tudo: Pão hambúrguer, mussarela, presunto, calabresa, ovo, bacon, cheddar, salsicha, alface e tomate + batata frita + refrigerante
+                            </h3>
+                            <span>R$ 30.00</span>
+                        </div>
+                    </li>
+                    <li onclick="openAba('quatri')" class="ham">
+                        <div>
+                            <h2>4 Trio X-Tudo</h2>
+                            <h3>4 X-Tudo: Pão hambúrguer, mussarela, presunto, calabresa, ovo, bacon, cheddar, salsicha, alface e tomate + batata frita + refrigerante
+                            </h3>
+                            <span>R$ 60.00</span>
                         </div>
                     </li>
                 </ul>
             </section>
         </main>
+        <section id="abas">
+            <section id="horario">
+                <div class="body">
+                    <div>
+                        <div class="exit" onclick="fechar('horario')">
+                            <i class="fa-light fa-x"></i>
+                        </div>
+                    </div>
+                    <h2>Horarios de Funcionamento</h2>
+                    <div class="tabela">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th rowspan="2">Domingo</th>
+                                    <td>18:00 às 01:00</td>
+                                </tr>
+                                <tr>
+                                    <th rowspan="2">Segunda</th>
+                                    <td>11:00 às 15:30</td>
+                                    <td>18:00 às 01:00</td>
+                                </tr>
+                                <tr>
+                                    <th rowspan="2">Terça</th>
+                                    <td>18:00 às 00:00</td>
+                                </tr>
+                                <tr>
+                                    <th rowspan="2">Quarta</th>
+                                    <td>11:00 às 15:30</td>
+                                    <td>18:00 às 00:00</td>
+                                </tr>
+                                <tr>
+                                    <th rowspan="2">Quinta</th>
+                                    <td>11:00 às 15:30</td>
+                                    <td>18:00 às 00:00</td>
+                                </tr>
+                                <tr>
+                                    <th rowspan="2">Sexta</th>
+                                    <td>11:00 às 15:30</td>
+                                    <td>18:00 às 00:00</td>
+                                </tr>
+                                <tr>
+                                    <th rowspan="2">Sabado</th>
+                                    <td>11:00 às 15:30</td>
+                                    <td>18:00 às 01:00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            <section id="entrega">
+                <div>
+                    
+                </div>
+            </section>
+        </section>
     </body>
     <script src="https://kit.fontawesome.com/f5ef098d2f.js" crossorigin="anonymous"></script>
     <script src="index.js"></script>

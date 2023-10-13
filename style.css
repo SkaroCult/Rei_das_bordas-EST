@@ -11,6 +11,7 @@
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 300;
     color: black;
+    scroll-behavior: smooth;
 }
 :focus{
     outline: none;
@@ -154,11 +155,23 @@ main section .titulo{
     font-family: 'Oswald', sans-serif;
 }
 main #pizza ul li{
-    background: url(img/pexels-narda-yescas-1566837.jpg) center center no-repeat;
+    background: url('img/pizavario.jpg') center center no-repeat;
     background-size: cover;
 }
-main #hambur ul li{
-    background: url('img/pexels-valeria-boltneva-1639562.jpg') center center no-repeat;
+main #hambur ul li, .ham{
+    background: url('img/hambur.jpg') center center no-repeat;
+    background-size: cover;
+}
+main #dog ul li, .do{
+    background: url('img/dog.jpg') center center no-repeat;
+    background-size: cover;
+}
+main #batata ul li{
+    background: url('img/batata.jpg') center center no-repeat;
+    background-size: cover;
+}
+main #bebida ul li{
+    background: url('img/drink.jpg') center center no-repeat;
     background-size: cover;
 }
 main section ul li{
@@ -168,9 +181,15 @@ main section ul li{
     border: 2px solid black;
     cursor: pointer;
 }
+main section ul li:hover ~ span{
+    filter: drop-shadow(0.1px 0.1px 10px green);
+}
 main section ul li div{
     height: 100%;
     background-image: linear-gradient(90deg, rgb(177, 117, 48), rgba(0, 0, 0, 0));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 main section ul li h2{
     font-size: 27px;
@@ -184,6 +203,14 @@ main section ul li h3{
     font-weight: 700;
     width: 50%;
 }
+main section ul li span{
+    margin: 10px 0px 10px 10px;
+    font-size: 20px;
+    font-family: 'Young Serif', serif;
+    color: rgb(105, 255, 105);
+    transition: filter 1s;
+}
+
 
 /*Scroll*/
 ::-webkit-scrollbar{

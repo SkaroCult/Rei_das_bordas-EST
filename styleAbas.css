@@ -1,0 +1,58 @@
+
+#abas #horario{
+    background-color: rgba(0, 0, 0, 0.329);
+    position:absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#abas .body{
+    background-color: wheat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
+#abas #horario .exit{
+    padding:10px 0px 0px 0px;
+    font-size: 28px;
+    transition: filter 0.6s;
+}
+#abas #horario .exit:hover{
+    filter:drop-shadow(0.1px 0.1px 10px Red)
+}
+
+#abas #horario .body h2{
+    margin: 10px;
+    font-size: 34px;
+    font-weight: bold;
+}
+#abas #horario table tr th{
+    border-bottom: 2px solid black;
+    margin: 5px
+}
+#abas #horario table tbody tr *{
+    font-size: 24px;
+    font-weight: bold;
+    margin:5px;
+}
+table tr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    border: solid 2px;
+}
+.tabela{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow-y: auto;
+}
