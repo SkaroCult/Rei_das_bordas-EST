@@ -16,12 +16,15 @@
     </head>
     <body>
         <header id="cabeca">
-            <div id="back"><img src="img/logo.png" alt="logo" width="200px" height="200px"></div>
+            <div id="back">
+                <img src="img/logo.png" alt="logo" width="200px" height="200px">
+                <div id="add" onclick="openAba('addi')"><i class="fa-solid fa-vector-square"></i></div>
+            </div>
             <h1>PIZZARIA REI DAS BORDAS</h1>
             <h2 class="descr">Pizzaria especializada e bordas</h2>
             <button onclick="openAba('horario')" id="hora">ABERTO <i class="fa-solid fa-bars"></i></button>
             <div id="detal">
-                <div class="entreg" onclick="openAba('entreg')">
+                <div class="entreg" onclick="openAba('entrega')">
                     <i class="fa-solid fa-money-bill-wheat"></i>
                     <h2>Taxa de entrega</h2>
                     <h3 id="entregaCalc">Calcular</h3>
@@ -262,6 +265,31 @@
             </section>
         </main>
         <section id="abas">
+            <section id="addi">
+                <div class="body">
+                    <div class="exit" onclick="fechar('addi')">
+                        <i class="fa-light fa-x"></i>
+                    </div>
+                    <h2>Novo Produto</h2>
+                    <div id="corpo">
+                        <label for="nomePro">Nome do Produto:</label>
+                        <input type="text" placeholder="Digite o nome aqui." id="nomePro">
+                        <label for="descriPro">Descrição do produtor:</label>
+                        <textarea name="produ" id="descriPro" cols="30" rows="10"></textarea>
+                        <label for="prePro">Preço do Produto:</label>
+                        <input type="number" name="produ" id="prePro" placeholder="Digite o preço aqui.">
+                        <label for="famPro">Familia do produto:</label>
+                        <div class="select" onclick="Pag('famProPag')">
+                            <h3 id="famPro">Selecione a Familia</h3>
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </div>
+                        <div id="famProPag">
+
+                        </div>
+                    </div>
+                    <button onclick="novoPro()">Adicionar</button>
+                </div>
+            </section>
             <section id="horario">
                 <div class="body">
                     <div>
@@ -312,8 +340,12 @@
                 </div>
             </section>
             <section id="entrega">
-                <div>
-                    
+                <div class="body">
+                    <div>
+                        <div class="exit" onclick="fechar('entrega')">
+                            <i class="fa-light fa-x"></i>
+                        </div>
+                    </div>
                 </div>
             </section>
         </section>
